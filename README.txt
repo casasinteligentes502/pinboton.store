@@ -37,3 +37,17 @@ ACTUALIZACIÓN REDES OFICIALES 24-08-2026:
 - TikTok: https://www.tiktok.com/@pinbotonguatemala
 - Correo principal: pinboton@gmail.com
 - Los botones de las tres redes quedaron activos y abren en una pestaña nueva.
+
+
+ACTUALIZACIÓN 01-09-2026 · PINES CORPORATIVOS:
+- Se agregaron las fotografías pin-elegante-colocacion.jfif y pin-elegante-modelo.jpeg.
+- Se creó una nueva sección comercial después de Productos y antes de Nosotros para presentar los pines como un elemento de identidad y presencia profesional.
+- Se añadió texto de venta y botón directo de cotización por WhatsApp.
+- Las nuevas fotografías también abren en el lightbox existente de la página.
+- IMPORTANTE: copiar ambas imágenes nuevas dentro de assets/images/ y conservar todas las imágenes existentes del sitio.
+
+ACTUALIZACIÓN 01-09-2026 · AJUSTE DE FOTOGRAFÍAS DE PINES
+- Las dos fotografías nuevas se redujeron y ahora tienen exactamente la misma proporción visual.
+- En computadora se muestran como dos tarjetas compactas de igual altura, alineadas con el estilo general de la página.
+- En tablet y teléfono se adaptan automáticamente para evitar que dominen la sección.
+- Se conserva el mensaje comercial y el botón directo de cotización por WhatsApp.

@@ -267,3 +267,66 @@ body{
 }
 @media(prefers-reduced-motion:reduce){.button-dot{animation:none}}
 
+/* =========================================================
+   PINES CORPORATIVOS · SECCIÓN COMPACTA Y UNIFORME
+   ========================================================= */
+.pin-showcase{
+  background:linear-gradient(135deg,#eef5ff 0%,#fffdf9 42%,#fff3e9 100%);
+  position:relative;
+  overflow:hidden;
+  padding:88px 0;
+}
+.pin-showcase:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;right:-125px;top:-120px;border:48px solid rgba(53,89,232,.05)}
+.pin-showcase:after{content:"";position:absolute;width:160px;height:160px;border-radius:46% 54% 63% 37%;left:-75px;bottom:-75px;background:rgba(246,185,59,.09);transform:rotate(24deg)}
+.pin-showcase-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;z-index:2}
+.pin-showcase-copy h2{font-family:var(--display);font-size:clamp(38px,4.3vw,58px);line-height:1.03;letter-spacing:-.035em;margin:11px 0 20px}
+.pin-showcase-lead{font-size:16px;color:#666d80;max-width:590px;margin:0}
+.pin-showcase-lead strong{color:var(--ink)}
+.pin-selling-points{display:grid;gap:0;margin:24px 0 22px}
+.pin-selling-points>div{display:flex;gap:13px;padding:12px 0;border-top:1px solid var(--line);align-items:flex-start}
+.pin-selling-points>div>span{width:36px;height:36px;flex:0 0 36px;display:grid;place-items:center;border-radius:12px;background:white;color:var(--blue);font-weight:900;box-shadow:0 8px 20px rgba(52,64,103,.07)}
+.pin-selling-points p{margin:0;display:grid;line-height:1.28}
+.pin-selling-points b{font-size:13px}
+.pin-selling-points small{font-size:10px;color:var(--muted);margin-top:3px}
+.pin-sales-message{padding:15px 17px;border-radius:16px;background:rgba(255,255,255,.72);border:1px solid rgba(53,89,232,.10);color:#5f6578;margin:0 0 22px;box-shadow:0 9px 24px rgba(56,67,103,.05);font-size:14px}
+.pin-sales-message strong{color:var(--indigo)}
+
+/* Las dos fotos quedan deliberadamente del mismo tamaño para mantener armonía visual. */
+.pin-showcase-media{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:center;max-width:540px;width:100%;justify-self:end}
+.pin-feature-photo{position:relative;display:block;width:100%;height:390px;padding:0;border:6px solid white;border-radius:25px;overflow:hidden;background:#e9ecf3;box-shadow:0 20px 48px rgba(45,55,95,.14);transition:transform .28s ease,box-shadow .28s ease}
+.pin-feature-photo img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s ease}
+.pin-feature-main,.pin-feature-secondary{transform:none}
+.pin-feature-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,rgba(18,27,52,.78));pointer-events:none}
+.pin-feature-photo span{position:absolute;z-index:2;left:16px;right:16px;bottom:14px;color:white;display:grid;text-align:left;line-height:1.18}
+.pin-feature-photo b{font-family:var(--display);font-size:18px}
+.pin-feature-photo small{font-size:8px;text-transform:uppercase;letter-spacing:.12em;opacity:.82;margin-top:4px}
+.pin-feature-photo:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(45,55,95,.17)}
+.pin-feature-photo:hover img{transform:scale(1.025)}
+
+@media(max-width:980px){
+  .pin-showcase{padding:78px 0}
+  .pin-showcase-grid{grid-template-columns:1fr;gap:38px}
+  .pin-showcase-copy{text-align:center}
+  .pin-showcase-lead{margin-inline:auto}
+  .pin-selling-points{text-align:left;max-width:680px;margin-inline:auto}
+  .pin-sales-message{max-width:700px;margin-inline:auto;margin-bottom:22px}
+  .pin-showcase-media{max-width:620px;justify-self:center}
+  .pin-feature-photo{height:360px}
+}
+
+@media(max-width:640px){
+  .pin-showcase{padding:68px 0}
+  .pin-showcase-copy h2{font-size:38px}
+  .pin-showcase-media{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:100%}
+  .pin-feature-photo{height:auto;aspect-ratio:3/4;border-width:4px;border-radius:19px}
+  .pin-feature-photo span{left:11px;right:11px;bottom:10px}
+  .pin-feature-photo b{font-size:14px}
+  .pin-feature-photo small{font-size:7px;letter-spacing:.08em}
+}
+
+@media(max-width:430px){
+  .pin-showcase-media{grid-template-columns:1fr;max-width:310px}
+  .pin-feature-photo{aspect-ratio:3/4}
+  .pin-feature-photo b{font-size:17px}
+  .pin-feature-photo small{font-size:8px}
+}
